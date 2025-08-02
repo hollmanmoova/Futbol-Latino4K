@@ -28,11 +28,12 @@
     var video = document.getElementById('video');
     if (Hls.isSupported()) {
       var hls = new Hls();
-      hls.loadSource('https://85c10a3ce7cc.ngrok-free.app/hls/123456.m3u8');
+      hls.loadSource('https://3d02be2fb156.ngrok-free.app/hls/123456.m3u8');
       hls.attachMedia(video);
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = 'https://85c10a3ce7cc.ngrok-free.app/hls/123456.m3u8';
+      video.src = 'https://3d02be2fb156.ngrok-free.app/hls/123456.m3u8';
     }
   </script>
 </body>
 </html>
+
